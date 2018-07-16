@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>The Psychic Game</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+  
+</head>
+
+<body>
+<script type="text/javascript"></script>
+  
+<div id="game">
+    <h1>Guess what letter I'm thinking of!</h1>
+    <img src="assets/images/Alphabet-game-ALPH01.jpg"></img>
+    <p id='wins'>Wins:</p>
+    <p id= "losses">Losses:</p>
+    <p id= "guesses"> Guesses Left:</p>
+    <p id= "sofar">Your Guesses so far:</p>
+
+  </div>
+
+  <script type="text/javascript">
+   
+    var computerChoices = ["a", "b", "c","d", "e", "f","g", "h", "i","j", "k", "l","m", "n", "o","p", "q", "r","s", "t", "u","v", "w", "x","y", "z"];
+
+    var wins = 0;
+    var losses = 0;
+    var guesses= 10;
+    var sofar= 0;
+
+    var computerGuess = computerChoices[Math.floor(Math.random() * 1000) + 1]
+    console.log(computerChoices);
+
+    document.onkeyup = function(event) {
+
+    var userGuess = event.key;
+
+    if(userGuess === computerGuess){
+        wins++;
+    }else{
+        guesses--;
+    }
+
+    if(guesses === 0){
+        losses++ 
+        guesses = 10; 
+    }
+
+    document.getElementById('wins').innerHTML = "Wins: " + wins;
+    document.getElementById('losses').innerHTML = "losses: " + losses;
+    document.getElementById('guesses').innerHTML = "Guesses left: " + guesses;
+    document.getElementById('sofar').innerHTML = "Guesses so far: " + guesses;
+
+} 
+  </script>
+
+</body>
+
+</html>
