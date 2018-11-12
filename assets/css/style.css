@@ -2,30 +2,55 @@
     height:250px;
     width:250px;
 }
-
+h1{
+    font-family: 'Teko', sans-serif;
+    font-weight: bold;
+    font-size: large;
+}
 #game{
-    background-color: red;
+    background-color:lightpink;
     text-align: center;
     font-size: large;
     font-weight: bold;
+    font-family: 'Orbitron', sans-serif;
+    padding: 35px;
+    color: white;
+
 }
 
 #wins{
     font-weight: bold;
     font-size: large;
+    color: white;
 }
 
 #losses{
     font-weight: bold;
     font-size: large;
+    color: white;
 }
 
 #guesses{
     font-weight: bold;
     font-size: large;
+    color: white;
 }
 
 #sofar{
     font-weight: bold;
     font-size: large;
+    color: white;
 }
+
+.footer {
+    padding:2px;
+    margin: 2px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: lightpink;
+    color:white;
+    text-align: center;
+    font-family: 'Abril Fatface';
+    font-size: .5cm;
+ }
