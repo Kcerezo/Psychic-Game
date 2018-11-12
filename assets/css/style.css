@@ -10,6 +10,14 @@ h1{
     text-shadow: 2px 2px black;
 
 }
+h2{
+    font-family: 'Teko', sans-serif;
+    font-weight: bold;
+    font-size: x-large;
+    text-decoration: underline;
+    text-shadow: 2px 2px black;
+
+}
 #game{
     background-color:lightpink;
     text-align: center;
